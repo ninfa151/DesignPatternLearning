@@ -7,10 +7,8 @@ using System.Threading.Tasks;
 
 namespace CommunicationApp.Communication
 {
-    internal abstract class Protocol
+    internal abstract class BaseFactory
     {
-        internal abstract void prepareConnection();
-        internal abstract void makeConnection();
-        internal abstract void closeConnection();
+        internal abstract BaseCommunication createCommunication(IPAddress address, int port);
     }
 }
