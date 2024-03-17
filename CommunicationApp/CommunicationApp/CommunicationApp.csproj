@@ -63,8 +63,10 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Communication\Protocol.cs" />
-    <Compile Include="Communication\TCPServer.cs" />
+    <Compile Include="Communication\00_BaseCommunication.cs" />
+    <Compile Include="Communication\00_TCPServer.cs" />
+    <Compile Include="Communication\01_BaseFactory.cs" />
+    <Compile Include="Communication\01_CommunicationFactory.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
